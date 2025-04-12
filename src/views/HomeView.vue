@@ -1,9 +1,21 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<template>
+  <div class="home">
+    <h1>Almayas E-commerce</h1>
+    <ProductList />
+  </div>
+</template>
+
+<script>
+import ProductList from '@/components/ProductList.vue';
+
+export default {
+  name: 'HomeView',
+  components: { ProductList },
+};
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped>
+.home {
+  padding: 20px;
+}
+</style>
